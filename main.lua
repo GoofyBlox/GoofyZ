@@ -25,7 +25,7 @@ Main.BackgroundTransparency = 0.5  -- Transparency added
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.335954279, 0, 0.542361975, 0)
-Main.Size = UDim2.new(0.240350261, 0, 0.166880623, 0)
+Main.Size = UDim2.new(0.240350261, 0, 0.240350261, 0) -- Square size instead of rectangle
 Main.Active = true
 Main.Draggable = true
 
