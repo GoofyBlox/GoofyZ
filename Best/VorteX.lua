@@ -22,6 +22,11 @@ Main.Size = UDim2.new(0.300, 0, 0.300, 0)
 Main.Active = true
 Main.Draggable = true
 
+-- Adding UICorner to Main frame for rounded edges
+local UICornerMain = Instance.new("UICorner")
+UICornerMain.CornerRadius = UDim.new(0, 15)  -- Adjust the number for the roundness
+UICornerMain.Parent = Main
+
 Box.Name = "Box"
 Box.Parent = Main
 Box.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
@@ -40,6 +45,11 @@ Box.TextWrapped = true
 UITextSizeConstraint.Parent = Box
 UITextSizeConstraint.MaxTextSize = 31
 
+-- Adding UICorner to Box for rounded edges
+local UICornerBox = Instance.new("UICorner")
+UICornerBox.CornerRadius = UDim.new(0, 12)  -- Adjust the number for the roundness
+UICornerBox.Parent = Box
+
 Label.Name = "Label"
 Label.Parent = Main
 Label.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
@@ -55,6 +65,11 @@ Label.TextWrapped = true
 
 UITextSizeConstraint_2.Parent = Label
 UITextSizeConstraint_2.MaxTextSize = 21
+
+-- Adding UICorner to Label for rounded edges
+local UICornerLabel = Instance.new("UICorner")
+UICornerLabel.CornerRadius = UDim.new(0, 8)  -- Adjust the number for the roundness
+UICornerLabel.Parent = Label
 
 Button.Name = "Button"
 Button.Parent = Main
@@ -72,6 +87,11 @@ Button.TextWrapped = true
 
 UITextSizeConstraint_3.Parent = Button
 UITextSizeConstraint_3.MaxTextSize = 28
+
+-- Adding UICorner to Button for rounded edges
+local UICornerButton = Instance.new("UICorner")
+UICornerButton.CornerRadius = UDim.new(0, 10)  -- Adjust the number for the roundness
+UICornerButton.Parent = Button
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
